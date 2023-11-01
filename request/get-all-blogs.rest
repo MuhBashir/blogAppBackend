@@ -1,0 +1,30 @@
+GET  http://localhost:5000/api/blog
+
+###
+POST http://localhost:5000/api/blog/add
+Content-Type: application/json
+
+{
+ "title": "My First Blog",
+ "description": "This is a my first blog",
+ "image": "xxx",
+ "user": "654216116e437f5dd737300c"
+}
+
+###
+PUT  http://localhost:5000/api/blog/update/6542167d6e437f5dd7373011
+Content-Type: application/json
+
+{
+ "title": "My second blog",
+ "description": "This is a my new blog "
+}
+
+###
+GET http://localhost:5000/api/blog/653acdf4b100bc7529f0135e
+
+###
+DELETE http://localhost:5000/api/blog/6542167d6e437f5dd7373011
+
+###
+GET http://localhost:5000/api/blog/user/654216116e437f5dd737300c
